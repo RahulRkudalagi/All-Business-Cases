@@ -1,0 +1,53 @@
+Task: Design a system that can manage transportation using modern technology.
+Target: This business case is mapped to the SDG 11 specifically 11.2 and 11.6 that are focuses on providing access to transport and reduce environmental impact respectively.
+Indicator: 11.2.1 and 11.6.2
+This Transport Management System (TMS) appears to be an interactive application designed to assist users in managing transportation tasks, travel planning, and exploring locations. Here's a detailed description of its functionalities
+Features
+Time Lookup Between Places: Users can search for the time required to travel between two locations using a lookup table. This feature is likely implemented with pre-calculated or real-time data, allowing quick access to travel times.
+Exploring Nearby Locations (DFS): For users who want to wander without a specific destination, the system uses Depth First Search (DFS) to suggest nearby locations. This feature helps in casual exploration.
+Shortest Path Finder (Dijkstra’s Algorithm): For users needing the shortest path between two specific locations, this feature employs Dijkstra’s algorithm, ensuring that the travel path avoids disconnections and is optimal.
+Level-by-Level Travel (BFS): Users can explore locations in a level-wise manner, possibly implemented using Breadth First Search (BFS). This could be useful for hierarchical travel exploration.
+Connected Shortest Path Tour (Prim’s Algorithm): Users looking for a fully connected tour with all places visited can rely on this feature, implemented using Prim’s algorithm. This ensures the shortest connected paths are prioritized.
+Disconnected Shortest Path Tour (Kruskal’s Algorithm): If a connected tour isn’t necessary, but all locations must be visited via the shortest paths, this feature employs Kruskal’s algorithm to design an efficient route.
+Highlights
+Direct Navigation Input: Users can manually input their desired location and receive guidance or travel details to reach it.
+Payment System: A feature for users to make travel-related payments, which might integrate with various payment gateways.
+User Ratings: Users can provide feedback or rate the service or application based on their experience.
+Emergency Services:
+Hospital: Provides guidance or navigation to the nearest hospital.
+Police Station: Directs users to the closest police station.
+Fire Department: Helps users reach the nearest fire department.
+Functionalities
+Graph Algorithms: Algorithms like DFS, BFS, Dijkstra’s, Prim’s, and Kruskal’s are used to manage and optimize travel paths, enabling the application to provide efficient solutions for various user scenarios.
+Data Management: Features for file loading and reading allow flexibility in managing travel data.
+User Interaction: Options for manual input, payments, and ratings improve user engagement.
+Emergency Navigation: Built-in support for navigating to essential services enhances the system’s utility.
+City map Overview
+This is a pictorial representation of the city design layout with an rough scale of 10 locations with the disatance
+
+Screenshot of Smart Transportation System
+This picture provides an overview of the Smart Transportation Management System interface.
+
+Nodes with edges
+This picture simplifies the city design map and helps to visualize it easily
+
+Screenshot of Smart Transportation System
+This picture provides an overview of the Smart Transportation Management System interface.
+
+The data generated on the city can be found in the file HERE(this is the link of the file.txt).The C++ code for the implementation of smart transport management system can found HERE(this is the cpp file for implementation).
+Reflection on Designing and Implementing the Transport Management System
+Organizing User Tasks
+I had to break down the different things a user might want to do into clear, distinct options. This makes the system easy to navigate. For example, you can either search for the shortest path between two places, explore nearby locations without worrying about the shortest route, or even visit places like hospitals or police stations. By giving users clear choices, they can quickly find what they're looking for.
+
+Choosing the Right Algorithms
+I had to pick algorithms that suit the task at hand:
+
+Dijkstra’s Algorithm is great for finding the shortest route between two points, which is perfect for the travel scenarios where time matters.
+DFS (Depth First Search) is useful when the goal is to explore locations without worrying about the most efficient path. It’s like wandering through a city, taking different paths just to see what’s there.
+BFS (Breadth First Search) is helpful for when we want to visit places level by level, starting from a point and gradually expanding outward.
+Prim's and Kruskal’s Algorithms are used for connected, efficient routes. Prim's ensures all places are visited in the shortest connected path, while Kruskal’s focuses on covering all places without needing a connected path, but still in the shortest way possible.
+User Experience and Simplicity
+Overall, I aimed for simplicity in how users interact with the system. Whether they're looking for a specific place, making a payment, or giving a rating, everything is broken down into manageable steps. The system’s layout is designed to let users focus on what they need without feeling overwhelmed by too many options at once.
+
+Handling Location-Specific Needs
+Including options for emergency services (like hospitals, police stations, and fire departments) makes the system more practical and adds a layer of real-world usefulness. It feels more connected to everyday needs.
