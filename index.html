@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Cases</title>
+    <style>
+        /* Base styling for the body */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #EDE7F6; /* Soft lavender background */
+            color: #3E2723; /* Dark brown text color for readability */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            animation: fadeIn 1s ease-out; /* Fade-in animation */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #673AB7; /* Dark purple background */
+            color: white;
+            text-align: center;
+            padding: 40px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            animation: bounceIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            font-weight: bold;
+            animation: slideInLeft 1s ease-out;
+        }
+
+        /* Main container styling */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            opacity: 0;
+            animation: bounceInUp 1s forwards 0.5s; /* Bounce-in effect */
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #512DA8; /* Slightly lighter purple for headings */
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #5D4037; /* A warm brown color */
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #8E24AA, #673AB7); /* Gradient button color (purple and pink) */
+            color: white;
+            text-decoration: none;
+            padding: 16px 30px;
+            margin: 12px 0;
+            font-size: 1.3rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            transform: scale(1.1); /* Scale effect on hover */
+            background: linear-gradient(45deg, #D81B60, #8E24AA); /* Gradient shift on hover */
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #D1C4E9; /* Light lavender footer */
+            color: #5D4037;
+            font-size: 0.9rem;
+            border-top: 1px solid #B39DDB;
+        }
+
+        footer a {
+            color: #673AB7; /* Dark purple link color */
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #D81B60; /* Pinkish color for hover effect */
+        }
+
+        /* Responsive styling for mobile devices */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .btn {
+                font-size: 1.1rem; /* Adjust button font size for smaller screens */
+                padding: 12px 22px; /* Adjust padding for buttons */
+            }
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounceInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Business Use Cases</h1>
+</header>
+
+<div class="container">
+    <h2>Explore the Business Use Cases</h2>
+    <p>Click the buttons below to learn more about each business case:</p>
+    <div>
+        <a href="https://prajwalhurakadli.github.io/BusinessCase/" class="btn">Delivery Service Optimization</a>
+    </div>
+    <div>
+        <a href="https://prajwalhurakadli.github.io/BusinessCase-Agri/" class="btn">Agriculture Optimization</a>
+    </div>
+    <div>
+        <a href="https://prajwalhurakadli.github.io/Business_Case_Housing-Management/" class="btn">Housing Development</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Business Cases | <a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
